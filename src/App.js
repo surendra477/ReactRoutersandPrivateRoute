@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/dashboard" element={<PrivateRoute />} >
           <Route path="" element={<Dashboard />} />
         </Route>
-        <Route element={<NotFound />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>
   );
